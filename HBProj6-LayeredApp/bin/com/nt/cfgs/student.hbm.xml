@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+     <!-- O-R mapping cfgs -->
+   <class name="com.nt.bo.StudentBO" table="HB_STUDENT">
+       <id name="sno"/>
+        <property name="sname"/>
+       <property name="total"/>
+       <property name="avg"/>
+       <property name="result"/>
+   </class>
+</hibernate-mapping>

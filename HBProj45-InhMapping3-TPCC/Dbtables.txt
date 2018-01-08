@@ -1,0 +1,23 @@
+SQL> desc in_persons3;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(5)
+ NAME                                               VARCHAR2(20)
+ COMPANY                                            VARCHAR2(20)
+
+SQL> desc in_customers3;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(5)
+ NAME                                               VARCHAR2(20)
+ COMPANY                                            VARCHAR2(20)
+ ADDRESS                                            VARCHAR2(20)
+
+SQL> desc in_employees3;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(5)
+ NAME                                               VARCHAR2(20)
+ COMPANY                                            VARCHAR2(20)
+ DEPARTMENT                                         NUMBER(7)
+ SALARY                                             NUMBER(8)

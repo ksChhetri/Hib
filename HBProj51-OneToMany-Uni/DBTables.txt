@@ -1,0 +1,17 @@
+SQL> select * from user_table;
+
+   USER_ID FIRST_NAME
+---------- --------------------
+      3456 ramesh
+      1001 raja
+      1002 ramesh
+
+SQL> select * from phone_numbers;
+
+     PHONE NUMBER_TYPE                UNID
+---------- -------------------- ----------
+  91919191 personal
+     88888 home                       1001
+    999999 office                     1001
+ 545466755 home                       1002
+  54545444 office                     1002

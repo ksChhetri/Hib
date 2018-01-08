@@ -1,0 +1,18 @@
+SQL> desc person;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PID                                       NOT NULL NUMBER(5)
+ FIRSTNAME                                          VARCHAR2(20)
+ LASTNAME                                           VARCHAR2(20)
+ AGE                                                NUMBER(5)
+
+SQL> desc license;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ LID                                       NOT NULL NUMBER(5)
+ TYPE                                               VARCHAR2(20)
+ VALIDFROM                                          DATE
+ VALIDTO                                            DATE
+ LICENSE_HOLDER                                     NUMBER(5)
+ 
+ SQL> create sequence license_id_seq increment by 1 start with 1000;

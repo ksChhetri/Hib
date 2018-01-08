@@ -1,0 +1,10 @@
+SQL> desc in_Persons;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(5)
+ NAME                                               VARCHAR2(20)
+ COMPANY                                            VARCHAR2(20)
+ DEPARTMENT                                         NUMBER(7)
+ SALARY                                             NUMBER(9)
+ ADDRESS                                            VARCHAR2(20)
+ PERSON_TYPE                                        VARCHAR2(10)

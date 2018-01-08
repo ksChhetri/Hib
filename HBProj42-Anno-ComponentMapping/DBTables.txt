@@ -1,0 +1,4 @@
+ create table person_tab(pid number(5) primary key,
+                                               pname varchar2(20),desg varchar2(20),
+                                               dept varchar2(10),salary number(7));
+                                               

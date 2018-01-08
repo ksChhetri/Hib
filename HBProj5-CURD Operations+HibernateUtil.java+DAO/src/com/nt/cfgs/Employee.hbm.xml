@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+     <!-- O-R mapping cfgs -->
+   <class name="com.nt.domain.Employee">
+       <id name="eid"/>
+        <property name="firstName" length="20"/>
+       <property name="lastName" length="20"/>
+       <property name="email" length="20"/>
+   </class>
+</hibernate-mapping>

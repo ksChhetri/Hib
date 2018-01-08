@@ -1,0 +1,34 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+     <!--Inheritence mapping cfgs -->
+   <class name="com.nt.domain.Person" table="in_persons3" >
+        <id name="id" >
+           <generator class="increment"/>
+        </id>
+        <property name="name"/>
+        <property name="company"/>
+   </class>
+   
+      <class name="com.nt.domain.Employee" table="in_employees3" >
+        <id name="id" >
+           <generator class="increment"/>
+        </id>
+        <property name="name"/>
+        <property name="company"/>
+           <property name="department"/>
+          <property name="salary"/>
+   
+   </class>
+   
+      <class name="com.nt.domain.Customer" table="in_customers3" >
+        <id name="id" >
+           <generator class="increment"/>
+        </id>
+        <property name="name"/>
+          <property name="company"/>
+         <property name="address"/>
+   </class>
+</hibernate-mapping>

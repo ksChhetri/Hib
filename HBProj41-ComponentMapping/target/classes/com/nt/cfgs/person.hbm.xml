@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+     <!-- O-R mapping cfgs -->
+   <class name="com.nt.domain.Person" table="person_tab">
+        <id name="pid" >
+           <generator class="increment"/>
+        </id>
+        <property name="pname"/>
+         <!-- Component mapping -->
+        <component name="pjob" class="com.nt.domain.JobType">
+           <property name="desg"/>
+           <property name="dept"/>
+           <property name="salary"/>
+        </component>
+   </class>
+</hibernate-mapping>

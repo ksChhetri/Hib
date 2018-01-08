@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+     <!-- O-R mapping cfgs -->
+   <class name="com.nt.domain.EmpDetails" table="Employee">
+       <id name="no"  column="EID"/>
+        <property name="fname" type="string">
+          <column name="FIRSTNAME" length="20" not-null="true"  />
+        </property>
+       <property name="lname" column="LASTNAME" type="string" length="20" not-null="true"/>
+       <property name="mail" column="EMAIL" type="string" length="20" unique="true"/>
+   </class>
+</hibernate-mapping>

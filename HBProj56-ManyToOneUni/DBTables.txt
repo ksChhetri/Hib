@@ -1,0 +1,5 @@
+SQL> create table department(deptno number(5) primary key,
+             deptname varchar2(20),depthead varchar2(20));
+SQL> create table EmpDetails (eno number(5) primary key,
+           ename varchar2(20),job varchar2(20),
+           deptno number(5) references department(deptno));

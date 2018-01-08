@@ -1,0 +1,5 @@
+SQL> create table inh_payment2(txId number(5) primary key,amount number(10));
+SQL> create table inh_creditcard_payment2(cardNo number(10), cctype varchar2(10),tx_id number(5) references inh_payment2(txId));
+SQL> create table inh_cheque_payment2(chequeNo number(10), chequeType varchar2(10),tx_id number(5) references inh_payment2(txId));
+SQL> create table inh_cash_payment2(denominations varchar2(10),tx_id number(5) references inh_payment2(txId));
+

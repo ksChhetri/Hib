@@ -1,0 +1,25 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+     <!--Inheritence mapping cfgs -->
+   <class name="com.nt.domain.Person" table="in_persons2">
+        <id name="id" >
+           <generator class="increment"/>
+        </id>
+        <property name="name"/>
+        <property name="company"/>
+
+        <joined-subclass name="com.nt.domain.Employee" table="in_employees2">
+          <key column="person_id"/>
+          <property name="department"/>
+          <property name="salary"/>
+        </joined-subclass>
+        
+        <joined-subclass name="com.nt.domain.Customer" table="in_customers2">
+          <key column="person_id"/>
+           <property name="address"/>
+        </joined-subclass>
+   </class>
+</hibernate-mapping>

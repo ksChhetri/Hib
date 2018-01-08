@@ -1,0 +1,12 @@
+SQL> select * from user_table3;
+
+   USER_ID FIRST_NAME
+----------        --------------------
+         1            raja
+
+SQL> select * from phone_numbers3;
+
+ PHONE            NUMBER_TYPE                UNID       MAP_INDX
+----------               --------------------               ----------   ----------
+ 999999999          office                               1                airtel
+ 8888888             residence                         1                vodafone

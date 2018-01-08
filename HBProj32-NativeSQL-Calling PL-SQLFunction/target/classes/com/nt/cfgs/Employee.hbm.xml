@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+     <!-- O-R mapping cfgs -->
+   <class name="com.nt.domain.EmpDetails" table="Employee">
+        <id name="no"  column="EID" type="int"/>
+        <property name="fname" column="FIRSTNAME"/>
+       <property name="lname" column="LASTNAME"/>
+       <property name="mail" column="EMAIL"/>
+   </class>
+   <sql-query name="CALL_FX"  callable="true">
+      <return class="com.nt.domain.EmpDetails"/>
+        {?=call GET_EMP_DETAILS_RANGE(:min,:max)}
+        <!-- {?=call GET_EMP_DETAILS_RANGE(?,?)} -->
+   </sql-query>
+   
+</hibernate-mapping>

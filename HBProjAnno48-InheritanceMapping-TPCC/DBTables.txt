@@ -1,0 +1,4 @@
+SQL> create table inh_creditcard_payment3(txId number(5) primary key,amount number(10),cardNo number(10), cctype varchar2(10));
+SQL>create table inh_cheque_payment3(txId number(5) primary key,amount number(10),chequeNo number(10), chequeType varchar2(10));
+ SQL>create table inh_cash_payment3(txId number(5) primary key,amount number(10),denominations varchar2(10));
+

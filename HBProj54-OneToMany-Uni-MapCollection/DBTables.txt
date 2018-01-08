@@ -1,0 +1,13 @@
+SQL> desc user_table3;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ USER_ID                                   NOT NULL NUMBER(5)
+ FIRST_NAME                                         VARCHAR2(20)
+
+SQL> desc phone_numbers3;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PHONE                                     NOT NULL NUMBER(11)
+ NUMBER_TYPE                           VARCHAR2(20)
+ UNID                                               NUMBER(5)
+ MAP_INDX                                    VARCHAR2(10)

@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+     <!-- O-R mapping cfgs -->
+   <class name="com.nt.domain.ProgrammerProjectDetails" table="programmers_projects">
+      <composite-id name="id" class="com.nt.cid.PrgmrProjId">
+         <key-property name="prgmrId" />
+         <key-property name="projId" />
+      </composite-id>
+      <property name="prgmrName"/>
+      <property name="projName"/>
+   </class>
+</hibernate-mapping>
